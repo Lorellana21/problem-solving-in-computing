@@ -8,5 +8,6 @@ Example:
 - Expected outpu: [GRU, SEA]
 
 
-  @param {Array<Array<string | array - array od tuples with airport codes
-  @returns {Array<String>} - starting and destination airports
+@param {Array<Array<string | array - array od tuples with airport codes
+
+@returns {Array<String>} - starting and destination airports
