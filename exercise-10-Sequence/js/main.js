@@ -6,6 +6,7 @@ const C = [0, 1, 0];
 const D = [0, 1, 1, 0];
 
 
+
 function solution(array) {
     //guardo los ceros y los unos
     let zeros = [];

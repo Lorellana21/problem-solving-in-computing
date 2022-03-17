@@ -9,7 +9,7 @@ Expected Result:
 
 Restriction: Use only arrays as data structures to solve the problem
 
- @param {?} arrays - Arrays of primitive data types
- @returns {Array}
+@param {?} arrays - Arrays of primitive data types
+@returns {Array}
 
 https://www.educative.io/blog/level-up-javascript-coding-challenges#balanced-brackets

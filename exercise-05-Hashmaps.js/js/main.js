@@ -1,7 +1,31 @@
 'use strict';
 
 const wordFrequency = (text) => {
-    // Complete 
+    //use a hashmap to store words and frequency
+    let frequencies = new Map();
+
+    //split the text into words
+    text.split(/\s/)
+        .filter(word => word.length)//me quedo con las palabras que tengan al menos longitud 1, para quitar espacios y demás
+        .forEach(word => {
+
+            //check if we already had this word in the hashtable
+            if (!frequencies.has(word)) {
+                //if not, create a new entry with value 1
+                frequencies.set(word, 1);
+
+
+            } else {
+                //if yes, increment the frequency counter
+                frequencies.set(word, frequencies.get(word) + 1);
+            }
+
+        })
+    //transform the Map into an array and sort it by frequency
+    //note that Array.from(map) return key -> value as [key, value]
+    return Array.from(frequencies)
+        .sort((a, b) => a[1] > b[1] ? -1 : 1);
+
 }
 
 const text = `Las empresas tecnológicas tienen ante ellas un gran desafío encontrar talento preparado para hacer frente a sus retos 
@@ -21,3 +45,4 @@ const text = `Las empresas tecnológicas tienen ante ellas un gran desafío enco
 
 let frequencies = wordFrequency(text.replace(/^\n\t+/i));
 console.log(JSON.stringify(frequencies));
+
