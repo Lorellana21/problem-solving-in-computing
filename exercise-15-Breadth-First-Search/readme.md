@@ -4,30 +4,14 @@ Given a matrix represents a maze, X is the starting point, Y is the destination,
 
 For example, we have the following maze:
 
----
+![image](https://user-images.githubusercontent.com/81922944/158795612-694d0cfe-c8ae-41b5-978a-665e48bc9947.png)
 
-. X . # . .
-. . . . # .
-. # . . . .
-. # # . . .
-. # Y . . .
-. . . . . #
-
----
 
 Solution:
 We found it!!! It took: 7 steps
 
----
+![image](https://user-images.githubusercontent.com/81922944/158795700-be2befaf-27c5-4ea4-97c1-7a52ebf44521.png)
 
-. X . # . .
-. @ @ . # .
-. # @ @ . .
-. # # @ . .
-. # Y @ . .
-. . . . . #
-
----
 
 @param {string[][]} maze
 @param {number[]} px
