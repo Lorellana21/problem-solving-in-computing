@@ -11,13 +11,16 @@ const addressNumbersToNum = () => {
 }
 console.log(addressNumbersToNum());
 
+
+/*--------------------------------------------------*/
+
 console.log(users.map((user) => {
     if (user["address"] != null) {
         return {
-            ...user,
+            ...user,//copiamos las propiedades del objeto original, se crea un nuevo "user"
             address: {
-                ...user["address"],
-                number: parseInt(user["address"]["number"])
+                ...user["address"],//copiamos las propiedades del objeto original
+                number: parseInt(user["address"]["number"])//modificamos su precio
             }
         }
     } else {
