@@ -5,24 +5,23 @@ const users = require('./users.json');
 // formato de número (y no de cadena que es como está ahora mismo)
 
 
-const newArray = [];
-for (const user in users) {
-    //let result = users[user] = parseInt(users[user], 10);
-    //console.log(result);
 
-    Object.keys(users[user]);
-    Object.values(users[user]);
-    newArray.push(Object.entries(users[user]));
-
+const addressNumbersToNum = () => {
+    return users.filter(user => user.address).map(user => parseInt(user.address.number))
 }
+console.log(addressNumbersToNum());
 
-
-const address = users.map(user => user.address);
-console.log(address)
-const numbers = [];
-for (const item in address) {
-    numbers.push(address[item])
-
-}
-console.log(numbers)
+console.log(users.map((user) => {
+    if (user["address"] != null) {
+        return {
+            ...user,
+            address: {
+                ...user["address"],
+                number: parseInt(user["address"]["number"])
+            }
+        }
+    } else {
+        return user
+    }
+}));
 

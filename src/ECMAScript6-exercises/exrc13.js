@@ -5,7 +5,7 @@
 
 
 class Car {
-    constructor(make, km) {
+    constructor(make) {
         this.make = make;
         this.km = 0;
     }
