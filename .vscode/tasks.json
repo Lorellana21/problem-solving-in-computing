@@ -4,7 +4,10 @@
 		{
 			"type": "npm",
 			"script": "test",
-			"group": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"problemMatcher": [],
 			"label": "npm: test",
 			"detail": "echo \"Error: no test specified\" && exit 1"
@@ -15,10 +18,7 @@
 			"problemMatcher": [],
 			"label": "npm: install",
 			"detail": "install dependencies from package",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			}
+			"group": "build"
 		}
 	]
 }
