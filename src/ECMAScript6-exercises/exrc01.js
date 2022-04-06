@@ -1,5 +1,6 @@
 const users = require('./users.json');
 
+
 // Obtener el usuario cuyo teléfono es "024-648-3804"
 
 for (const user in users) {
@@ -22,6 +23,10 @@ console.log(names)
 const namesImproved = users.map(({ name }) => name);
 console.log(namesImproved)
 //los paréntesis son para poder desarmar el parámetro y obtener su propiedad
+
+//igual funciona con filter
+const filter = users.filter(({ id }) => id < 3);
+console.log(filter)
 
 
 

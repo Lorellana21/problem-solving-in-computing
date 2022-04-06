@@ -9,12 +9,13 @@ class Car {
         this.make = make;
         this.km = 0;
     }
-    move = () => this.km++
+    move = (km) => this.km += km;
 
-    getinfo = () => 'He hecho ' + this.make + ' y ' + this.km + ' kilómetros.';
+    getinfo = () => console.log('Hecho en ' + this.make + ', tiene ' + this.km + ' kilómetros.');
 
 }
-const result = new Car(4);
-console.log(result.move());
-console.log(result.getinfo());
+const myCar = new Car("China");
+myCar.move(150);
+myCar.getinfo();
+
 
