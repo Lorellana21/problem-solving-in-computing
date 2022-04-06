@@ -3,23 +3,12 @@ const users = require('./users.json');
 // Obtener un array con los teléfonos de los usuarios cuyo website
 // pertenezca a un dominio biz
 
-const result = [];
-
-const bizWebsite = users.filter(user => user.website === ".biz");
-
-console.log(bizWebsite);
 
 
+//1: filter users with biz domain website
+const usersWithBizDomain = users.filter(user =>
+    user.website != null && user.website.includes("biz"));
 
-let newArray = [];
-let filterValue = "biz";
-
-for (let user in users) {
-    if (users[user].includes === filterValue) {
-        newArray.push(users[user]);
-    }
-}
-console.log(newArray);
-
-
-
+//2: get an array with their phones
+const usersPhones = usersWithBizDomain.map((user) => user.phone);
+console.log(usersPhones)
