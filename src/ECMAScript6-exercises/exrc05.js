@@ -1,7 +1,11 @@
 const users = require('./users.json');
 
-//Obtener un array que sólo contenga las cadenas de los emails de los usuarios
+/*Obtener un array que sólo contenga las cadenas de los emails de los usuarios*/
 
+//the solution
+const usersEmails = users.map(u => u.email);
+
+//my solution
 const emails = [];
 for (const user in users) {
     emails.push(users[user].email);

@@ -1,4 +1,4 @@
-//Simplifique las siguientes asignaciones usando el spread operator
+/*Simplifique las siguientes asignaciones usando el spread operator*/
 
 
 

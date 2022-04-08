@@ -1,4 +1,4 @@
-//Use funciones flecha en vez de las que se indican
+/*Use funciones flecha en vez de las que se indican*/
 
 const array = [1, 2, 3];
 

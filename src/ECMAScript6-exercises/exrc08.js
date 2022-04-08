@@ -1,30 +1,17 @@
 const users = require('./users.json');
 
-//Obtener el array de usuarios cuya dirección está ubicada entre la
-// latitud -50 y 50, y la longitud -100 y 100
+/*Obtener el array de usuarios cuya dirección está ubicada entre la
+latitud -50 y 50, y la longitud -100 y 100*/
+
+//the solution
+const usersLatLng = users.filter(u => u.address &&
+    -50 < +u.address.geo.lat && +u.address.geo.lat < 50 &&
+    -100 < +u.address.geo.lng && +u.address.geo.lng < 100);
+console.log(usersLatLng)
 
 
 
 
-
-
-//const address = users.map((user) => user.address)
-
-const result = users.map(user => {
-    if (user["address"] != null) {
-        if (user.address["geo"]["lat"] > -50 &&
-            user.address["geo"]["lat"] < 50 &&
-            user.address["geo"]["lng"] > -100 &&
-            user.address["geo"]["lng"] < 100) {
-            return user.address["geo"]["lat"] &&
-                user.address["geo"]["lng"]
-
-        }
-    }
-})
-
-
-console.log(result)
 
 
 

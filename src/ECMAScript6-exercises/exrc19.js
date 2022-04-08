@@ -1,7 +1,7 @@
-//Convierta los siguientes bucles usando for of y for in
+/*Convierta los siguientes bucles usando for of y for in*/
 
 
-let a3 = [0, 1, 2, 3, 4, 5];
+const a3 = [0, 1, 2, 3, 4, 5];
 
 for (let value of a3) {
     console.log(value);
@@ -9,13 +9,13 @@ for (let value of a3) {
 
 
 
-let object3 = {
+const object3 = {
     a: 1,
     b: 2,
     c: 3
 };
 
-let objKeys = Object.keys(object3);
+const objKeys = Object.keys(object3);
 console.log(objKeys)
 
 for (const prop in objKeys) {

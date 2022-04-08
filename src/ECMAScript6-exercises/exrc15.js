@@ -1,12 +1,11 @@
-//Declare las variables convenientemente
+/*Declare las variables convenientemente*/
 
 
 const PI = 3.14;
 
-function getCircleArea(r) {
-    return PI * r * r;
-}
+const getCircleArea = r => PI * r * r;
 
-for (let i = 1; i <= 3; i++) {
-    console.log('r = ' + i + ', area = ' + getCircleArea(i));
-}
+for(let i = 1; i <= 3; i++) {
+    console.log(`r = ${i}, area = ${getCircleArea(i)}`);
+  }
+  

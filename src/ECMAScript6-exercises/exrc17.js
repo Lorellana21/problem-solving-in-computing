@@ -1,4 +1,4 @@
-//Simplifique estas asignaciones a variables usando sintaxis ES6
+/*Simplifique estas asignaciones a variables usando sintaxis ES6*/
 
 const object2 = {
     a: 1,

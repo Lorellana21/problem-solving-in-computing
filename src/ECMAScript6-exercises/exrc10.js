@@ -1,8 +1,8 @@
 const users = require('./users.json');
 
-//Escriba una función processArray que, dado un array de números
-// enteros, devuelva un nuevo array en que aquellos elementos que
-// sean pares se multipliquen por 2.
+/*Escriba una función processArray que, dado un array de números
+enteros, devuelva un nuevo array en que aquellos elementos que
+sean pares se multipliquen por 2.*/
 
 
 const testArray = [2, 3, 5, 6, 5, 9, 10, 12, 13];
